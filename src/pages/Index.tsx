@@ -33,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-muted py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-4 flex justify-between items-center">
+        <div className="mb-4 flex justify-between items-center print-button">
           <h2 className="font-serif text-2xl text-rivi-burgundy">RIVI Menükarte</h2>
           <Button 
             variant="outline" 
@@ -45,7 +45,9 @@ const Index = () => {
           </Button>
         </div>
         
-        <CurrentPageComponent />
+        <div className="print:hidden">
+          <CurrentPageComponent />
+        </div>
         
         <div className="hidden print:block">
           <StorySection />
@@ -53,7 +55,7 @@ const Index = () => {
           <DrinksSection />
         </div>
         
-        <div className="print:hidden">
+        <div className="print:hidden navigation-controls">
           <NavigationDots 
             activePage={currentPage} 
             totalPages={PAGES.length} 

@@ -41,7 +41,7 @@ const StorySection = () => {
           Dieser Abend ist eine kleine Hommage an diese Reise. Ein Mosaik aus Aromen und Erinnerungen, serviert mit Herzlichkeit.
         </p>
         
-        <p className="text-center italic mt-6">
+        <p className="text-center italic mt-8">
           Willkommen bei RIVI.
         </p>
       </div>
