@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Printer } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import StorySection from '@/components/StorySection';
 import MenuSection from '@/components/MenuSection';
 import DrinksSection from '@/components/DrinksSection';
@@ -24,10 +23,6 @@ const Index = () => {
     setCurrentPage((prev) => Math.max(prev - 1, 0));
   };
   
-  const handlePrint = () => {
-    window.print();
-  };
-  
   const CurrentPageComponent = PAGES[currentPage].component;
   
   return (
@@ -35,14 +30,6 @@ const Index = () => {
       <div className="max-w-4xl mx-auto">
         <div className="mb-4 flex justify-between items-center print-button">
           <h2 className="font-serif text-2xl text-rivi-burgundy">RIVI Menükarte</h2>
-          <Button 
-            variant="outline" 
-            className="flex items-center gap-2 border-rivi-gold text-rivi-burgundy hover:bg-rivi-gold/10"
-            onClick={handlePrint}
-          >
-            <Printer size={18} />
-            <span>Als PDF drucken</span>
-          </Button>
         </div>
         
         <div className="print:hidden">
