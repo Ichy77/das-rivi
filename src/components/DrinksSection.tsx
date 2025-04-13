@@ -30,7 +30,7 @@ const DrinksSection = () => {
               <span className="text-sm italic text-rivi-dark">Geschichtete Verführung aus Milch, Espresso und Schaum</span>
             </li>
             <li className="flex justify-between">
-              <span className="font-medium">Kaffee Crème</span>
+              <span className="font-medium">Kaffee Crèma</span>
               <span className="text-sm italic text-rivi-dark">Aromatischer Kaffee, sanft abgerundet</span>
             </li>
           </ul>
@@ -55,9 +55,6 @@ const DrinksSection = () => {
           
           <div className="mt-6 space-y-2">
             <p className="font-medium">Mineralwasser – Still oder Sprudelnd</p>
-            <p className="font-medium">Coca-Cola / Coca-Cola Zero</p>
-            <p className="font-medium">Apfelschorle</p>
-            <p className="font-medium">Orangensaft</p>
           </div>
           
           <p className="mt-4 text-rivi-dark italic">Sowie eine Auswahl weiterer gekühlter Getränke nach Gusto.</p>
