@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import i18n from '@/i18n';
 import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
+import FirstVisitMusicModal from './components/FirstVisitMusicModal';
 
 const queryClient = new QueryClient();
 
@@ -19,12 +20,20 @@ const queryClient = new QueryClient();
 const audioSrc = 'https://storage.googleapis.com/airtablebackup/music_das_rivi.mp3';
 
 const App = () => {
-  const { i18n } = useTranslation(); 
+  const { i18n } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showFirstVisitModal, setShowFirstVisitModal] = useState(false);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+
+  useEffect(() => {
+    const visited = localStorage.getItem('hasVisited');
+    if (!visited) {
+      setShowFirstVisitModal(true);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +49,11 @@ const App = () => {
     };
   }, [isScrolled]);
 
+  const handleCloseFirstVisitModal = () => {
+    localStorage.setItem('hasVisited', 'true');
+    setShowFirstVisitModal(false);
+  };
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
@@ -47,6 +61,7 @@ const App = () => {
           <Toaster />
           <Sonner />
           <RiviLogo />
+          <FirstVisitMusicModal isOpen={showFirstVisitModal} onClose={handleCloseFirstVisitModal} />
           <div className={`absolute top-4 right-4 flex gap-1.5 sm:gap-2 z-50 md:fixed transition-opacity duration-300 md:opacity-100 ${isScrolled ? 'opacity-0 pointer-events-none md:pointer-events-auto' : 'opacity-100'}`}>
             <Button 
               variant={i18n.language === 'en' ? 'default' : 'outline'} 
