@@ -5,44 +5,43 @@ import PageTitle from './PageTitle';
 
 const StorySection = () => {
   return (
-    <div className="page-container animate-fade-in">
+    <div className="page-container bg-black bg-opacity-80 text-white shadow-[0_0_15px_rgba(212,175,55,0.3)] border border-rivi-gold/20 animate-fade-in">
       <RiviLogo />
-      <PageTitle mainTitle="RIVI" subtitle="Eine Geschichte zweier Wege, ein gemeinsamer Genuss" />
+      <PageTitle mainTitle="das-RIVI" subtitle="Where Stories Blend & Vibes Resonate" />
       
-      <div className="prose max-w-none text-rivi-dark">
+      <div className="prose max-w-none text-white">
         <p className="mb-4">
-          Unsere kulinarische Reise beginnt nicht erst auf dem Teller, sondern in den Biografien, die uns heute an diesem Tisch vereinen. 
-          RIVI ist die Essenz einer besonderen Verbindung, ein Destillat aus Erlebnissen, Orten und gemeinsamen Momenten.
+          Welcome to das-RIVI – the vibrant intersection of two distinct life journeys, now transformed into Düsseldorf's most intimate scene-treff. 
+          More than walls and furnishings, das-RIVI is where music pulses, conversations flow, and memories are crafted.
         </p>
         
         <p className="mb-4">
-          Da ist Richard, dessen Wurzeln tief in der westfälischen Erde Lippstadts verankert sind, 
-          dessen akademischer Weg ihn jedoch ins lebendige Münster führte. Ein Geist, geprägt von Beständigkeit und Neugier.
+          It all starts with Richard, born in Westphalia's Lippstadt soil and nurtured in Münster's academic atmosphere. 
+          A spirit defined by reliability and curiosity, with an ear for the perfect beat and an eye for the finer things.
         </p>
         
         <p className="mb-4">
-          Und da ist Ivonne, gestartet im charmanten Anrath am Niederrhein. Ihre Wissbegierde trug sie durch Studienjahre 
-          in Augsburg und Bonn, gipfelnd in einer prägenden Promotionszeit im kaiserlichen Wien – einer Stadt, 
-          die nicht nur den Geist, sondern auch die Sinne nährt.
+          Then there's Ivonne, whose journey began in Anrath's charming streets by the Lower Rhine. Her quest for knowledge 
+          carried her through Augsburg and Bonn, culminating in Vienna's imperial embrace – a city that nurtures both intellect and sensory pleasure.
         </p>
         
         <p className="mb-4">
-          Genau dort, in der Walzermetropole Wien, kreuzten sich ihre Pfade. Es folgten Jahre des gemeinsamen Entdeckens, 
-          des intellektuellen Austauschs und der Freude am Schönen – eine Zeit, die den Grundstein für RIVI legte.
+          It was in Vienna's rhythmic heart where their paths converged. Years of shared exploration, intellectual exchange, 
+          and appreciation for beauty followed – laying the foundation for what das-RIVI would ultimately become.
         </p>
         
         <p className="mb-4">
-          Seit nunmehr acht Monden schreiben wir unser nächstes Kapitel in Düsseldorf, in wohltuender Nähe zu Ivonnes Heimat Anrath. 
-          Hier verschmelzen die gesammelten Eindrücke zu etwas Neuem: RIVI – die Harmonie westfälischer Klarheit und rheinischer Lebensfreude, 
-          verfeinert durch Wiener Eleganz und die Offenheit für das Kommende.
+          For eight moons now, we've been writing our next chapter in Düsseldorf, comfortably close to Ivonne's Anrath roots. 
+          Here, our collected impressions melt into something fresh: das-RIVI – the harmony of Westphalian clarity and Rhenish joie de vivre, 
+          refined with Viennese elegance and an openness to what comes next.
         </p>
         
         <p className="mb-4">
-          Dieser Abend ist eine kleine Hommage an diese Reise. Ein Mosaik aus Aromen und Erinnerungen, serviert mit Herzlichkeit.
+          Each gathering at das-RIVI is a tribute to this journey – a mosaic of sounds, flavors, memories, and new connections, served with warmth.
         </p>
         
-        <p className="text-center italic mt-8">
-          Willkommen bei RIVI.
+        <p className="text-center italic mt-8 text-rivi-gold">
+          Welcome to our space. Welcome to the vibe.
         </p>
       </div>
     </div>

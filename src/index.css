@@ -61,7 +61,9 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-black text-foreground font-sans;
+    background-image: radial-gradient(circle at center, rgba(128, 0, 32, 0.15) 0%, rgba(0, 0, 0, 0.95) 100%);
+    background-attachment: fixed;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -74,7 +76,7 @@
 }
 
 .elegant-divider::before, .elegant-divider::after {
-  @apply content-[''] flex-1 border-t border-rivi-gold;
+  @apply content-[''] flex-1 border-t border-rivi-gold/30;
 }
 
 .elegant-divider::before {
@@ -87,12 +89,46 @@
 
 .page-container {
   width: 210mm; /* A4 width */
-  min-height: 297mm; /* A4 height */
-  @apply mx-auto bg-white px-10 py-10 shadow-lg rounded-md my-8;
+  @apply mx-auto px-10 py-10 rounded-md my-8;
 }
 
 .menu-title {
-  @apply font-serif font-medium text-rivi-burgundy;
+  @apply font-serif font-medium text-rivi-gold;
+}
+
+/* Music waveform animation */
+.audio-wave {
+  @apply flex items-center justify-center gap-1 h-8;
+}
+
+.audio-wave span {
+  @apply block w-1 bg-rivi-gold rounded-full;
+  animation: wave 1.2s infinite ease-in-out;
+}
+
+.audio-wave span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.audio-wave span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.audio-wave span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.audio-wave span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 20px;
+  }
 }
 
 @media print {
@@ -103,6 +139,9 @@
     padding: 20mm;
     box-shadow: none;
     page-break-after: always;
+    background: white !important;
+    color: black !important;
+    border: none !important;
   }
   
   /* Hide print button when printing */
@@ -117,5 +156,15 @@
   
   body {
     background-color: white;
+    background-image: none;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px 2px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.4);
   }
 }
