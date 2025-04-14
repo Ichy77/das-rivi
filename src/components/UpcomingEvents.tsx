@@ -18,7 +18,7 @@ const UpcomingEvents = () => {
   return (
     <div className="mt-10 mx-auto max-w-xl">
       <Link to="/events/richy-turns-29" className="block hover:no-underline">
-        <Card className="bg-black bg-opacity-70 border-rivi-gold/30 text-white hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all duration-300 cursor-pointer">
+        <Card className="bg-black bg-opacity-70 border-rivi-gold/30 text-white cursor-pointer">
           <CardHeader className="pb-2">
             <div className="flex justify-between items-start">
               <div>
