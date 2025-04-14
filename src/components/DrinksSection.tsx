@@ -1,12 +1,9 @@
-
 import React from 'react';
-import RiviLogo from './RiviLogo';
 import PageTitle from './PageTitle';
 
 const DrinksSection = () => {
   return (
     <div className="page-container animate-fade-in">
-      <RiviLogo />
       <PageTitle mainTitle="Getränkebegleitung" />
       
       <div className="space-y-8">

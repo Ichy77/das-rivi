@@ -1,12 +1,9 @@
-
 import React from 'react';
-import RiviLogo from './RiviLogo';
 import PageTitle from './PageTitle';
 
 const MenuSection = () => {
   return (
     <div className="page-container animate-fade-in">
-      <RiviLogo />
       <PageTitle mainTitle="Menü des Abends" subtitle="Eine Komposition in drei Akten" />
       
       <div className="space-y-8">
