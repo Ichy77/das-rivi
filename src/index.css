@@ -88,8 +88,27 @@
 }
 
 .page-container {
-  width: 210mm; /* A4 width */
-  @apply mx-auto px-10 py-10 rounded-md my-8;
+  width: 100%;
+  max-width: 100%;
+  @apply mx-auto rounded-md;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-container {
+    width: 210mm; /* A4 width */
+  }
 }
 
 .menu-title {

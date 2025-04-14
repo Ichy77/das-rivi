@@ -1,10 +1,10 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, MapPin, Music, Utensils, GlassWater, Pause } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { useAudio } from '@/contexts/AudioContext';
-import i18n from '@/i18n';
 
 const EventDetail = () => {
   const { t } = useTranslation();
