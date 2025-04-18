@@ -1,7 +1,7 @@
 {
   "pageTitle": "Richy turns 29",
   "backButton": "Back to Home",
-  "subtitle": "From fine dining to house club vibes",
+  "subtitle": "Guest List Only",
   "dateLabel": "Date",
   "dateValue": "May 10th 2025",
   "timeLabel": "Time",
@@ -9,13 +9,13 @@
   "locationLabel": "Location",
   "locationValue": "the RIVI, Düsseldorf",
   "joinUsTitle": "Join Us for the Celebration",
-  "joinUsParagraph": "It's that time of year again – Richy's birthday is here and we're transforming the RIVI for a celebration that evolves with the day. We're ditching the formal for the casual, trading fine dining for good vibes, and creating the perfect atmosphere for connection and celebration.",
+  "joinUsParagraph": "It's that time of year again – Richy's birthday is here and we're transforming the RIVI for a celebration that evolves with the day.",
   "soundsTitle": "The Sounds",
   "soundsParagraph": "Curated house tracks that build from relaxed afternoon grooves to more energetic evening beats. The perfect soundtrack to conversations and celebrations.",
   "foodTitle": "The Food",
-  "foodParagraph": "Gourmet grilled delights prepared right on our terrace. From classic BBQ favorites to unexpected flavor combinations that match our easy-going atmosphere.",
+  "foodParagraph": "Gourmet grilled delights prepared right on our terrace. The classic BBQ favorites that match our easy-going atmosphere.",
   "drinksTitle": "The Drinks",
-  "drinksParagraph": "Refreshing cocktails, chilled beers, and a selection of non-alcoholic options to keep the good times flowing. Our signature birthday drink will make its debut!",
+  "drinksParagraph": "Refreshing wines, chilled beers, and a selection of non-alcoholic options to keep the good times flowing.",
   "noGifts": "No gifts necessary – just bring your good energy and ready-to-celebrate spirit!",
   "lookingForward": "Looking forward to celebrating another trip around the sun with you.",
   "playMusicLabel": "Play music",
@@ -27,16 +27,15 @@
   "homepageWelcome": "Welcome to our space. Welcome to the vibe.",
 
   
-  "storyIntro": "RIVI – the vibrant intersection of two distinct life journeys, now transformed into Düsseldorf's most intimate scene-treff. More than walls and furnishings, the RIVI is where music pulses, conversations flow, and memories are crafted.",
-  "storyRichard": "It all starts with Richard, born in Westphalia's Lippstadt soil and nurtured in Münster's academic atmosphere. A spirit defined by reliability and curiosity, with an ear for the perfect beat and an eye for the finer things.",
-  "storyIvonne": "Then there's Ivonne, whose journey began in Anrath's charming streets by the Lower Rhine. Her quest for knowledge carried her through Augsburg and Bonn, culminating in Vienna's imperial embrace – a city that nurtures both intellect and sensory pleasure.",
-  "storyVienna": "It was in Vienna's rhythmic heart where their paths converged. Years of shared exploration, intellectual exchange, and appreciation for beauty followed – laying the foundation for what the RIVI would ultimately become.",
-  "storyDusseldorf": "For eight moons now, we've been writing our next chapter in Düsseldorf, comfortably close to Ivonne's Anrath roots. Here, our collected impressions melt into something fresh: the RIVI – the harmony of Westphalian clarity and Rhenish joie de vivre, refined with Viennese elegance and an openness to what comes next.",
+  "storyIntro": "Whispers have circulated, anticipation has built. Finally, the doors to the legendary RIVI open. This is not merely an address; it is a destination for the discerning.",
+  "storyRIVI": "Born from the unique synergy of Richard and Ivonne, this space is the alchemical result of their paths intersecting to forge something truly unique.",
+  "storyVienna": "The RIVI is a temple to the perfect moment – where music pulses with intention, laughter flows freely, and the collective energy becomes the night's most valuable currency. It is a strictly Vibe-Controlled environment.",
+  "storyDusseldorf": "For eight moons now, we've been writing our next chapter in Düsseldorf, comfortably close to our roots. Here, our collected impressions melt into something fresh: the RIVI – the harmony of Westphalian clarity and Rhenish joie de vivre, refined with Viennese elegance and an openness to what comes next.",
   "storyConclusion": "Each gathering at the RIVI is a tribute to this journey – a mosaic of sounds, flavors, memories, and new connections, served with warmth.",
 
   
   "upcomingEventsDate": "10th of May", 
-  "upcomingEventsDescription": "An afternoon and evening transformation: We're switching from fine-dining elegance to relaxed house vibes. Expect chilled beats, grilled delights, and ice-cold drinks under the warm sun. Join us for Richy's birthday celebration – where good energy meets great company!",
+  "upcomingEventsDescription": "Join us at the RIVI, for a special afternoon and evening transformation. We're embracing relaxed house vibes over formal elegance, creating a mosaic of chilled beats, grilled delights, and refreshing drinks. Experience the RIVI energy – where good company and great music blend under the sun.",
 
   "guestListOnly": "Guest List Only",
 

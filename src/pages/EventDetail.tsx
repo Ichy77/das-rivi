@@ -38,7 +38,6 @@ const EventDetail = () => {
                 {isPlaying ? <Pause size={16} className="text-rivi-gold" /> : <Music size={16} className="text-rivi-gold" />}
               </button>
             <p className="text-xs sm:text-sm md:text-lg text-white italic">{t('subtitle')}</p>
-            <p className="text-xs sm:text-sm md:text-lg text-rivi-gold mt-2">{t('guestListOnly')}</p>
             <div className="mt-2 md:mt-5 flex justify-center">
               <div className="h-0.5 w-12 sm:w-24 bg-rivi-gold"></div>
             </div>

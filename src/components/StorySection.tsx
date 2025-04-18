@@ -10,11 +10,7 @@ const StorySection = () => {
       </p>
       
       <p className="mb-4">
-        {t('storyRichard')}
-      </p>
-      
-      <p className="mb-4">
-        {t('storyIvonne')}
+        {t('storyRIVI')}
       </p>
       
       <p className="mb-4">
