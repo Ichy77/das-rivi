@@ -27,6 +27,7 @@ const App = () => {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+  
 
   useEffect(() => {
     const visited = localStorage.getItem('hasVisited');
