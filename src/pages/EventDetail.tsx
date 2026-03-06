@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, MapPin, Music, Utensils, GlassWater, Pause } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -8,10 +7,6 @@ import { useAudio } from '@/contexts/AudioContext';
 const EventDetail = () => {
   const { t } = useTranslation();
   const { isPlaying, togglePlayPause } = useAudio();
-
-  const handleIconClick = (event: React.MouseEvent) => {
-    togglePlayPause();
-  };
 
   return (
     <div className="min-h-screen bg-black bg-opacity-90 text-white py-6 px-2 sm:px-4 overflow-x-hidden w-full box-border">
@@ -31,7 +26,7 @@ const EventDetail = () => {
           <div className="text-center mb-5 md:mb-10 relative">
             <h1 className="text-xl sm:text-3xl md:text-5xl font-serif font-medium text-rivi-gold mb-2 sm:mb-3">{t('pageTitle')}</h1>
             <button 
-                onClick={handleIconClick}
+                onClick={togglePlayPause}
                 className="absolute top-0 right-0 mt-1 mr-1 bg-rivi-burgundy p-1.5 sm:p-2 rounded-full z-10 focus:outline-none focus:ring-2 focus:ring-rivi-gold focus:ring-offset-2 focus:ring-offset-black/80 hover:bg-rivi-burgundy/80 transition-colors" 
                 aria-label={isPlaying ? t('pauseMusicLabel') : t('playMusicLabel')}
               >
@@ -80,6 +75,13 @@ const EventDetail = () => {
             <p className="mb-3 md:mb-4 text-xs sm:text-sm md:text-base">
               {t('joinUsParagraph')}
             </p>
+
+            <div className="mb-4 rounded-lg border border-rivi-gold/20 bg-rivi-burgundy/10 p-3 md:p-4">
+              <h3 className="text-rivi-gold font-medium text-sm sm:text-lg md:text-xl">{t('practicalInfoTitle')}</h3>
+              <p className="mt-1 text-white/80 text-xs sm:text-sm md:text-base">
+                {t('practicalInfoParagraph')}
+              </p>
+            </div>
             
             <div className="flex items-start gap-2 md:gap-3 mb-3 md:mb-4">
               <Music size={16} className="text-rivi-gold mt-1 flex-shrink-0" />
@@ -114,10 +116,6 @@ const EventDetail = () => {
             <div className="elegant-divider">
               <span className="px-2 sm:px-4 font-serif text-rivi-gold">✦</span>
             </div>
-            
-            <p className="text-center italic mt-4 sm:mt-6 text-rivi-gold text-xs sm:text-sm md:text-base">
-              {t('noGifts')}
-            </p>
             
             <p className="text-center mt-3 sm:mt-6 text-xs sm:text-sm md:text-base">
               {t('lookingForward')}

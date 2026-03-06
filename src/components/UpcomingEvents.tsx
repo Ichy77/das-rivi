@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, Clock, MapPin, Music, Play, Pause } from 'lucide-react';
+import { Calendar, Clock, MapPin, Music, Pause } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { useAudio } from '@/contexts/AudioContext';
@@ -17,7 +17,7 @@ const UpcomingEvents = () => {
 
   return (
     <div className="mt-10 mx-auto max-w-xl">
-      <Link to="/events/richy-turns-29" className="block hover:no-underline">
+      <Link to="/events/richy-turns-30" className="block hover:no-underline">
         <Card className="bg-black bg-opacity-70 border-rivi-gold/30 text-white cursor-pointer">
           <CardHeader className="pb-2">
             <div className="flex justify-between items-start">
